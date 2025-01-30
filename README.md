@@ -1,71 +1,67 @@
-# deepseek README
 
-This is the README for your extension "deepseek". After writing up a brief description, we recommend including the following sections.
+# deepseek VS Code Extension
+
+This VS Code extension integrates with the Ollama API and utilizes the `deepseek-coder-v2` model for AI-powered development assistance. The extension is designed for developers to enhance their workflow with conversational AI within the VS Code environment.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Interactive Chatbot UI**: Provides a chatbot interface similar to ChatGPT for seamless communication with AI.
+- **Model Selection**: You can choose from various models available through the Ollama API (currently using `deepseek-coder-v2`).
+- **Background Operation**: The extension runs in the background using a terminal, allowing for uninterrupted development.
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- **Node.js 22**: Ensure you have Node.js version 22 installed on your system.
+- **Ollama & Model**: Make sure Ollama is installed and the model of your choice is available. The extension is currently set to use the `deepseek-coder-v2` model.
+- 
+To install the required packages, run:
 
-## Extension Settings
+```bash
+npm install
+```
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+### Installing Ollama:
 
-For example:
+1. Visit the [Ollama website](https://ollama.com/) to download and install Ollama for your platform.
+2. After installation, download the model using the [Deepseek-Coder-V2 page](https://ollama.com/library/deepseek-coder-v2).
+3. Select the model parameter according to your hardware (I am using the 16B parameter).
 
-This extension contributes the following settings:
+### Running the Model:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+Once you have installed Ollama and selected your model, run the model in your terminal with the following command:
+
+```bash
+ollama run deepseek-coder-v2
+```
+
+## Extension Setup
+
+1. Ensure Ollama and the preferred model are installed and running on your system.
+2. Launch the extension by opening the **Command Palette**:
+    - On Mac: Press `Cmd + Shift + P`
+    - On Windows/Linux: Press `Ctrl + Shift + P`
+3. Select **Debug: Start Debugging**.
+4. A new VS Code window will open. Again, open the **Command Palette** and type "Start Deepseek" to activate the extension.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- If the model is not running in the background, the extension may not function correctly. Ensure the model is actively running before interacting with the chatbot UI.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+- Initial release of the deepseek VS Code extension with `deepseek-coder-v2` model integration.
 
 ---
 
-## Following extension guidelines
+## Following Extension Guidelines
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+Make sure you’ve read through [VS Code Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines) to follow the best practices when creating your extension.
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+## For More Information
 
-## Working with Markdown
+- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Enjoy using Deepseek!**
