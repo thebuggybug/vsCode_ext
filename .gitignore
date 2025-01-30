@@ -1,0 +1,32 @@
+# Node modules
+node_modules/
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
+
+# Dependency directories
+bower_components/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+out/
+
+# Temporary files
+*.swp
+*.swo
+*.bak
+
+# Package distribution files
+*.tgz
+*.tar.gz
+
+# NPM lock files (if using Yarn, replace with yarn.lock)
+package-lock.json
+yarn.lock

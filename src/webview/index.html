@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{styleUri}}">
+</head>
+
+<body>
+    <h2>DeepSeek DeepChat</h2>
+    <textarea id="prompt" style="width: 100%;" rows="3" placeholder="What are you searching for ?"></textarea>
+    
+    <div id="buttonContainer">
+        <button id="askBtn">Ask 💭💭
+    </div>
+
+    <div id="loadingIndicator" style="display: none;">Thinking...</div>
+    <div id="response"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+    <script src="{{scriptUri}}"></script>
+</body>
+</html>

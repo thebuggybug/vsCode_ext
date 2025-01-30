@@ -1,0 +1,91 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+#buttonContainer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 200px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007acc;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #005f99;
+}
+
+#response {
+    display: none;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    font-size: 14px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #282c34;
+}
+
+pre {
+    background: #282c34;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+#askBtn {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+#askBtn:hover {
+    background-color: #0056b3; 
+}
+
+#loadingIndicator {
+    display: none; /* Initially hidden */
+    margin-bottom: 10px; /* Space below the prompt box */
+    margin-top: 10px; /* Space below the prompt box */
+    text-align: center; /* Center align text */
+}
