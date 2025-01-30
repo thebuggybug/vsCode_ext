@@ -14,6 +14,8 @@ This VS Code extension integrates with the Ollama API and utilizes the `deepseek
 ## Extension Snapshots:  
 > <img width="400" alt="image" src="https://github.com/user-attachments/assets/6c10e222-f7ac-4018-a5fc-3846e1995255" />
 > <img width="400" alt="image" src="https://github.com/user-attachments/assets/39d4afd9-3699-4a82-935e-0696c0eea59a" />
+> <img width="800" alt="image" src="https://github.com/user-attachments/assets/b27e2b60-850d-4230-bb4f-2cc21ac12b4b" />
+
 
 
 
