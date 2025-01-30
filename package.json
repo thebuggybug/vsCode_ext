@@ -1,24 +1,57 @@
 {
   "name": "deepseek",
-  "displayName": "Deepseek",
+  "displayName": "Deepseek Chat",
   "description": "extension to interact with deepseek AI chat.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.96.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thebuggybug/vsCode_ext.git"
+  },
+  "publisher": "Rohan Manandhar",
+  "icon": "resources/deepSeek.png",
+  "author": {
+    "name": "thebuggybug",
+    "email": "hi@rohanmanandhar.com.np",
+    "url": "https://rohanmanandhar.com.np"
+  },
+  "license": "MIT",
   "categories": [
     "Other"
   ],
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "id": "deepseekView",
+          "name": "DeepSeek Chat",
+          "type": "webview",
+          "webview": {
+            "localResourceRoots": [
+              {
+                "path": "./webview"
+              }
+            ]
+          }
+        }
+      ]
+    },
     "commands": [
       {
         "command": "deepseek.start",
-        "title": "Start Deepseek"
+        "title": "Start Deepseek Chat"
       }
     ]
   },
+  "files": [
+    "out",
+    "src/webview",
+    "resources/deepSeek.png"
+  ],
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
